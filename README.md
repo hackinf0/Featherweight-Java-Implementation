@@ -348,4 +348,4 @@ FJ> :q
 Goodbye!
 ```
 
-Thanks for reading! 🎉
+Thanks for reading! :)
