@@ -1,0 +1,21 @@
+class A extends Object {
+  int x;
+
+  A(int y) {
+    super();
+    this.x = y;
+  }
+}
+
+class B extends A {
+  int z;
+
+  B(int x, int z) {
+    super(x);
+    this.z = x; //   assigning `x` instead of `z`
+  }
+
+  int foo() {
+    return this.y; //  field `y` doesn't exist
+  }
+}

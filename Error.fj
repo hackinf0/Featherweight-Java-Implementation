@@ -1,0 +1,13 @@
+class A extends Object {
+  A() { super(); }
+  int getNum() {
+    42
+  }
+}
+
+class B extends A {
+  B() { super(); }
+  boolean getNum() {
+    true
+  }
+}
