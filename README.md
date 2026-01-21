@@ -2,11 +2,11 @@
 
 A complete interpreter implementation of Featherweight Java (FJ), a minimal core calculus for Java, developed as part of the **Principles and Paradigms of Programming Languages** course at the **University of Genova**, 2024.
 
-## 📖 Overview
+##  Overview
 
 Featherweight Java is a minimal functional subset of Java that captures the essential features of object-oriented programming: classes, inheritance, field access, method invocation, and dynamic dispatch. This implementation provides a full pipeline from parsing to evaluation, including comprehensive type checking.
 
-## 🎯 Features
+##  Features
 
 - **Complete FJ Syntax Support**: Classes, inheritance, constructors, fields, and methods
 - **Lexer & Parser**: Built with Parsec for robust parsing of `.fj` files
@@ -24,7 +24,7 @@ Featherweight Java is a minimal functional subset of Java that captures the esse
   - Cast evaluation
 - **Interactive REPL**: Command-line interface for interactive FJ programming
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - **GHC** (Glasgow Haskell Compiler) version 8.0 or higher
 - **Cabal** or **Stack** (optional, for dependency management)
@@ -34,7 +34,7 @@ Featherweight Java is a minimal functional subset of Java that captures the esse
 - `parsec`
 - `containers`
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Option 1: Using GHC directly
 
@@ -66,7 +66,7 @@ cabal build
 cabal run fj
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 fj/
@@ -82,7 +82,7 @@ fj/
 └── Featherweight Java Implementation.pdf  # Course documentation
 ```
 
-## 🎮 Usage
+##  Usage
 
 ### Starting the REPL
 
@@ -168,7 +168,7 @@ Demonstrates incorrect method overriding (incompatible return types).
 #### ErrorProgram.fj - Field Access Error
 Demonstrates field access to non-existent fields.
 
-## 🔧 REPL Commands Reference
+##  REPL Commands Reference
 
 | Command | Description | Example |
 |---------|-------------|---------|
@@ -180,7 +180,7 @@ Demonstrates field access to non-existent fields.
 | `:q` | Quit the interpreter | `:q` |
 | `EXPRESSION` | Evaluate a Featherweight Java expression | `new Object()` |
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Module Descriptions
 
@@ -218,7 +218,7 @@ REPL implementation:
 - State management (class table, type checking status, variable context)
 - Expression parsing and evaluation pipeline
 
-## 📚 Featherweight Java Language Spec
+##  Featherweight Java Language Spec
 
 ### Syntax
 
@@ -260,7 +260,7 @@ Expression:
 - **E-Invk**: Method call substitutes arguments and `this`
 - **E-Cast**: `(C)(new D(...)) → new D(...)` if valid
 
-## 🐛 Known Limitations
+##  Known Limitations
 
 - No primitive types (int, boolean) - only reference types
 - No null values
@@ -269,7 +269,7 @@ Expression:
 - No garbage collection (not needed for pure evaluation)
 - Single inheritance only (like Java)
 
-## 🧪 Testing
+##  Testing
 
 Run the provided example files to test different features:
 
@@ -290,7 +290,7 @@ FJ> :typecheck
 # Should fail with field access error
 ```
 
-## 📖 References
+##  References
 
 - **"Featherweight Java: A Minimal Core Calculus for Java and GJ"**  
   Igarashi, Pierce, and Wadler (2001)  
@@ -299,17 +299,17 @@ FJ> :typecheck
 - **Course**: Principles and Paradigms of Programming Languages  
   University of Genova, 2024
 
-## 👥 Author
+##  Author
 
 Developed as coursework for the Principles and Paradigms of Programming Languages course at the University of Genova, 2024.
 
-## 📄 License
+##  License
 
 This is an educational project developed for academic purposes.
 
 ---
 
-## 🚀 Quick Start Example
+##  Quick Start Example
 
 ```bash
 # Start the interpreter
